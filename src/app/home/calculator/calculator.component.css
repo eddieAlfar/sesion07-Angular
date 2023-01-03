@@ -1,0 +1,25 @@
+select {
+    max-width: 542px;
+    margin: auto;
+  }
+  
+  .no-eligio {
+    color: red;
+  }
+  
+  .suma {
+    color: rgb(255, 132, 10);
+  }
+  
+  .resta {
+    color: rgb(13, 0, 255);
+  }
+  
+  .multipli {
+    color: rgb(39, 103, 123);
+  }
+  
+  .divide {
+    color: rgb(125, 43, 226);
+  }
+  
