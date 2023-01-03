@@ -14,16 +14,16 @@ export class CalculatorComponent {
 
  
   onSumar():void{
-    this.resultado=this.num1+this.num2;
+    this.resultado=this.num1 +this.num2;
   }
   onRestar():void{
-    this.resultado=this.num2-this.num1;
+    this.resultado=this.num2 -this.num1;
   }
-  onMulti():void{
-    this.resultado=this.num1*this.num2;
+  onMulti():void{ 
+    this.resultado=this.num1 * this.num2;
   }
   onDiv():void{
-    this.resultado=this.num1/this.num2;
+    this.resultado=this.num1 / this.num2;
   }
  
   calcular(): number {
