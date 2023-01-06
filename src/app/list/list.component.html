@@ -1,0 +1,44 @@
+
+<form> 
+    <div class="container">
+        <div class="row">
+            <div class="mb-4">
+                <label for="" class="text-center">1°</label>
+                <input type="text" name="name" [(ngModel)]="name" class="form-control">
+            </div>
+            <div class="mb-4">
+                <label for="" class="form-label">Resultado</label>
+                <p>{{name | uppercase}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-4">
+                <label for="" class="text-center">2°</label>
+                <input type="text" [(ngModel)]="inputValue" class="form-control">
+            </div>
+            <div class="mb-4" >
+                <select [(ngModel)]="currencyCode" class="form-select form-select-sm" name="currencyCode">
+                    <option selected value="defecto" > Seleccione tipo de divisa </option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">Euro</option>
+                    
+                </select>
+                
+            </div>
+            <p *ngIf="currencyCode!=='defecto' ">{{ inputValue | currency:currencyCode }}</p>
+        </div>
+
+        <div class="row">
+            <div class="md-4">
+                <h1 class="text-center">3°</h1>
+            </div>
+            <div>
+                <p>FECHA: 06/01/2023 17:24:09 =>  {{ '01/06/2023 19:35:00' | y }}</p>
+                <p>FECHA: 06/01/2023 13:00 =>  {{ '01/06/2023 11:00' | y }}</p>
+                <p>FECHA: 01/01/2023 12:00 =>  {{ '01/01/2023 02:00' | y }}</p>
+                <p>FECHA: 01/02/2022 12:00 =>  {{ '01/01/2022 14:00' | y }}</p>
+            </div>
+           
+        </div>
+    </div>
+</form>

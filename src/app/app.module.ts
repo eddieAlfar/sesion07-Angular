@@ -8,6 +8,9 @@ import { CalculatorComponent } from './home/calculator/calculator.component';
 import { EnfoqueDirective } from './enfoque.directive';
 import { ContactComponent } from './contact/contact.component';
 import { ContactReactiveComponent } from './contact-reactive/contact-reactive.component';
+import { ListComponent } from './list/list.component';
+
+import { YPipe } from './y.pipe';
 //import { CalcComponent } from './cal/calc.component'
 @NgModule({
   declarations: [
@@ -15,13 +18,17 @@ import { ContactReactiveComponent } from './contact-reactive/contact-reactive.co
     CalculatorComponent,
     EnfoqueDirective,
     ContactComponent,
-    ContactReactiveComponent
+    ContactReactiveComponent,
+    ListComponent,
+
+    YPipe
   
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
