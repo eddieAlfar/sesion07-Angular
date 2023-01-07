@@ -13,7 +13,7 @@ export class ListComponent {
   name:string="";
   currencyCode:string="";
   inputValue:string='';
-  
+  valor: string = 'GBP';
 
   constructor() { }
 
