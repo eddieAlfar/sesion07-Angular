@@ -14,10 +14,10 @@
         <div class="row">
             <div class="mb-4">
                 <label for="" class="text-center">2°</label>
-                <input type="text" [(ngModel)]="inputValue" class="form-control">
+               
             </div>
             <div class="mb-4" >
-                <select [(ngModel)]="currencyCode" class="form-select form-select-sm" name="currencyCode">
+                <select [(ngModel)]="valor" class="form-select form-select-sm" name="select">
                     <option selected value="defecto" > Seleccione tipo de divisa </option>
                     <option value="USD">USD</option>
                     <option value="EUR">Euro</option>
@@ -25,7 +25,8 @@
                 </select>
                 
             </div>
-            <p *ngIf="currencyCode!=='defecto' ">{{ inputValue | currency:currencyCode }}</p>
+            
+            <p class="fs-3 text-success">{{ 2 | currency : valor }}</p>
         </div>
 
         <div class="row">
