@@ -4,9 +4,8 @@ import { NgForm } from '@angular/forms';
 interface contactForm{
   
     "name": string,
-    "checkAdult": boolean,
-    "department": string,
-    "coment": string
+    "dni": number,
+    "estado": string
   
 }
 @Component({
@@ -14,21 +13,21 @@ interface contactForm{
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit{
+export class ContactComponent{
 
   model={
   
     name: "",
-    checkAdult: false,
-    department: "",
-    coment: ""
+    dni: "",
+    estado: ""
   
 }
-  ngOnInit(): void {
-      }
+valores = '';
 
-  onSubmit(form:NgForm):void{
-      console.log('Form values', form);
+ 
+  onSubmit(values:any){
+      console.log('Form values', values);
+      this.valores = values;
       }
 
     }

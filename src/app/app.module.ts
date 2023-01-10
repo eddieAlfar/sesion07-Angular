@@ -11,6 +11,8 @@ import { ContactReactiveComponent } from './contact-reactive/contact-reactive.co
 import { ListComponent } from './list/list.component';
 
 import { YPipe } from './y.pipe';
+import { HijoComponent } from './hijo/hijo.component';
+
 //import { CalcComponent } from './cal/calc.component'
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { YPipe } from './y.pipe';
     ContactReactiveComponent,
     ListComponent,
 
-    YPipe
+    YPipe,
+     HijoComponent,
+     
   
   ],
   imports: [
